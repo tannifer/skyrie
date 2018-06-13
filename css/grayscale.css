@@ -293,17 +293,32 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #42DCA3;
-  color: #42DCA3;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #42DCA3;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   outline: none;
   color: black;
-  background-color: #42DCA3;
+  background-color: rgba(255, 255, 255, 0.2);
 }
+
+.btn-skyrie {
+  border: 1px solid #000000;
+  color: white;
+  background-color: transparent;
+}
+
+.btn-skyrie:hover,
+.btn-skyrie:focus {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 ul.banner-social-buttons {
   margin-top: 0;
 }
@@ -347,3 +362,6 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+
+.black-background {background-color:#000000;}
+.white {color:#ffffff;}
