@@ -23,5 +23,5 @@ function sendMail() {
      + 'Design your own: ' + own + '%0D%0A'
      + 'Venue Adress: ' + vaddress + '%0D%0A'
      + 'Aditional information: ' + additionalInfo + '%0D%0A' ;
-    window.location.href = 'mailto:shorty.les@gmail.com?subject=The subject - booking request for ' + name + ' (' + email + ')' + '&body=' + message;
+    location.href = 'mailto:shorty.les@gmail.com?subject=The subject - Skyrie booking request for ' + name + ' (' + email + ')' + '&body=' + message;
 };
