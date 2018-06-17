@@ -1,4 +1,6 @@
 <?php
+$Subject = "Skyrie booking";
+$EmailTo = "contact@skrie.co.uk";
 
 $Name = Trim(stripslashes($_POST['name']));
 $Email = Trim(stripslashes($_POST['email']));
@@ -45,6 +47,9 @@ $Body .= "\n";
 $Body .= "Start time: ";
 $Body .= $Start;
 $Body .= "\n";
+$Body .= "Finish time: ";
+$Body .= $Finish;
+$Body .= "\n";
 $Body .= "Select Basic: ";
 $Body .= $EventType;
 $Body .= "\n";
@@ -59,13 +64,13 @@ $Body .= $AdditionalInfo;
 $Body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+$success = mail($EmailTo, $Subject, $Body, "From: <$Email>");
 
 // redirect to success page
 if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"1;URL=bookingSuccess.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"1;URL=bookingSuccess.html\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"1;URL=bookingFailure.php\">";
+  print "<meta http-equiv=\"refresh\" content=\"1;URL=bookingFailure.html\">";
 }
 ?>

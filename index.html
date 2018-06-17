@@ -258,14 +258,13 @@
         <div class="wedding-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                  <form class="form-horizontal">
+                  <form class="form-horizontal" id="skyrieform" action="/sendEmail.php" method="post">
                   <fieldset>
 
                   <!-- Form Name-->
                   <h2>Booking Form</h2>
 
                   <!-- Text input-->
-                  <form action="/sendEmail.php" method="post">
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="name">Name:</label>
                     <div class="col-md-4">
@@ -363,12 +362,10 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="submit">Contact Us</label>
                     <div class="col-md-4">
-                      <button id="submit" name="submit" class="btn btn-success" >Contact Us</button>
+                      <button id="submit" name="submit" class="btn btn-success">Contact Us</button> <!--onclick="document.getElementById('skyrieform).submit();"-->
                     </div>
                   </div>
-                </form>
-
-                  </fieldset>
+                </fieldset>
                   </form>
                 </div>
             </div>
