@@ -1,6 +1,7 @@
 <?php
 $Subject = "Skyrie booking";
-$EmailTo = "contact@skrie.co.uk";
+//$EmailTo = "hannahcoutts@gmail.com";
+$EmailTo = "contact@skyrie.co.uk";
 
 $Name = Trim(stripslashes($_POST['name']));
 $Email = Trim(stripslashes($_POST['email']));
@@ -11,7 +12,11 @@ $DateEvent = Trim(stripslashes($_POST['dateEvent']));
 $Start = Trim(stripslashes($_POST['start']));
 $Finish = Trim(stripslashes($_POST['finish']));
 $EventType = Trim(stripslashes($_POST['eventType']));
-$Own = Trim(stripslashes($_POST['own']));
+$Own1 = Trim(stripslashes($_POST['own1']));
+$Own2 = Trim(stripslashes($_POST['own2']));
+$Own3 = Trim(stripslashes($_POST['own3']));
+$Own4 = Trim(stripslashes($_POST['own4']));
+$Own5 = Trim(stripslashes($_POST['own5']));
 $Vaddress = Trim(stripslashes($_POST['vaddress']));
 $AdditionalInfo = Trim(stripslashes($_POST['additionalInfo']));
 
@@ -54,7 +59,15 @@ $Body .= "Select Basic: ";
 $Body .= $EventType;
 $Body .= "\n";
 $Body .= "Design your own: ";
-$Body .= $Own;
+$Body .= $Own1;
+$Body .= ", ";
+$Body .= $Own2;
+$Body .= ", ";
+$Body .= $Own3;
+$Body .= ", ";
+$Body .= $Own4;
+$Body .= ", ";
+$Body .= $Own5;
 $Body .= "\n";
 $Body .= "Venue address: ";
 $Body .= $Vaddress;

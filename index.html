@@ -254,11 +254,11 @@
     </section>
 
     <!-- booking Section -->
-    <section id="booking" class="content-section text-center">
+    <section id="booking" class="content-section">
         <div class="wedding-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                  <form class="form-horizontal" id="skyrieform" action="/sendEmail.php" method="post">
+                  <form class="form-horizontal text-center" id="skyrieform" action="/sendEmail.php" method="post">
                   <fieldset>
 
                   <!-- Form Name-->
@@ -276,7 +276,7 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="email">Email:</label>
                     <div class="col-md-4">
-                    <input id="email" name="email" placeholder="" class="form-control input-md" required="" type="text">
+                    <input id="email" name="email" placeholder="" class="form-control input-md" required="" type="email">
                     </div>
                   </div>
 
@@ -291,7 +291,7 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="phone">Phone:</label>
                     <div class="col-md-4">
-                    <input id="phone" name="phone" placeholder="" class="form-control input-md" required=""  type="text">
+                    <input id="phone" name="phone" placeholder="" class="form-control input-md" required=""  type="tel">
                     </div>
                   </div>
 
@@ -337,12 +337,53 @@
                   </div>
 
                   <!-- Textarea -->
+
                   <div class="form-group">
-                    <label class="col-md-4 control-label" for="event">Design your own:</label>
-                    <div class="col-md-4">
-                      <textarea class="form-control" id="own" name="own"></textarea>
+                  <label class="col-md-4 control-label" Style="margin-top: -7px" for="event">Design your own</label>
+                    <div class="col-md-4 text-left">
+                      <input id="own1" name="own1" value="Ceremony bagpipes" type="checkbox">
+                      <label class="form-check-label" for="event">Wedding ceremony bagpipes</label>
                     </div>
                   </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="event"></label>
+                    <div class="col-md-4 text-left">
+                      <input id="own2" name="own2" value="Ceremony background" type="checkbox">
+                      <label class="form-check-label" for="event">Ceremony background music</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="event"></label>
+                    <div class="col-md-4 text-left">
+                      <input id="own3" name="own3" value="Reception background" type="checkbox">
+                      <label class="form-check-label" for="event">Reception background music</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="event"></label>
+                    <div class="col-md-4 text-left">
+                      <input id="own4" name="own4" value="Ceilidh" type="checkbox">
+                      <label class="form-check-label" for="event">Ceilidh</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="event"></label>
+                    <div class="col-md-4 text-left">
+                      <input id="own5" name="own5" value="Disco" type="checkbox">
+                      <label class="form-check-label" for="event">Disco</label>
+                    </div>
+                  </div>
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="event">Other details:</label>
+                      <div class="col-md-4">
+                        <textarea class="form-control" id="vaddress" name="vaddress"></textarea>
+                      </div>
+                    </div>
 
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="event">Venue address:</label>
@@ -360,7 +401,7 @@
 
                   <!-- Button -->
                   <div class="form-group">
-                    <label class="col-md-4 control-label" for="submit">Contact Us</label>
+                    <label class="col-md-4 control-label" for="submit"></label>
                     <div class="col-md-4">
                       <button id="submit" name="submit" class="btn btn-success">Contact Us</button> <!--onclick="document.getElementById('skyrieform).submit();"-->
                     </div>
