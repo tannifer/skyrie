@@ -319,6 +319,33 @@ a:focus {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.btn-link-skyrie {
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #42dca3;
+  background-color: transparent;
+}
+.btn-link-skyrie:hover,
+.btn-link-skyrie:focus {
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: none;
+  color: #1d9b6c;
+  background-color: transparent;
+}
+
+.btn-link-nocolour
+{
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: transparent;
+}
+.btn-link-nocolour:hover,
+.btn-link-nocolour:focus {
+  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: none;
+  color: white;
+  text-decoration: underline;
+  background-color: transparent;
+}
 ul.banner-social-buttons {
   margin-top: 0;
 }
