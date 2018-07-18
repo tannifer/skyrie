@@ -261,6 +261,10 @@ a:focus {
   font-style: italic;
 }
 
+.form-field-required {
+  font-style: italic;
+}
+
 .test {
   background: rgba(255,255,255, 0.1);
   padding: 10px;
@@ -432,7 +436,7 @@ body {
 .btn-success-skyrie {
     color: #fff;
     background-color: #6B88B5;
-    border-color: #6B88B5;
+    border-color: #6B88B5
 }
 .btn-success-skyrie:hover {
     color: #fff;
