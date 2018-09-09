@@ -30,6 +30,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125411311-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125411311-1');
+    </script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -90,7 +100,7 @@
                         </h1>
                         <p class="intro-text">Scottish Ceilidh band for weddings, events and concerts
                             <br>Tel: 07913 219105</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#ceilidh" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -193,7 +203,22 @@
             <div class="col-md-4"><img src="img/chrism.jpg"/></div>
             <div class="col-md-8">
                 <h3><a href="http://esperimusic.wixsite.com/esperi"class="btn-link-skyrie-header"> Chris Marr</a></h3>
-                <p>Guitarmeister and songster.</p>
+                <p>Chris performs as a solo artist and with various bands, has shared the stage with Andy Mckee, Jon Gomm,
+                  Gomez, Jeffrey Lewis, James Yorkston, Ólöf Arnolds, KT Tunstall and collaborated with RM Hubbert and
+                  Alex Kopranos (Franz Ferdinand).</p>
+                <p>He is also an audio engineer, working live and producing at his studio, including music from his own
+                  original project ‘Esperi’ plus various other bands and artists.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><img src="img/sam.jpg"/></div>
+            <div class="col-md-8">
+                <h3><a href="http://joepasquale.com/"class="btn-link-skyrie-header"> Sam De Pasquale</a></h3>
+                <p>Sam has been playing the guitar since he was old enough to hold one. He was introduced to folk music at
+                  University and since then hasn't looked back! He has played in a number of folk bands and performed at
+                  festivals across the UK and abroad.</p>
+                <p>He plays multiple instruments, including the guitar, bouzouki and pipes, but most enjoys playing any
+                  instrument with a weird number of strings.</p>
             </div>
         </div>
       </div>
@@ -278,13 +303,13 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Listen</h2>
                 <div><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t_0tP6G5B0k" frameborder="0" allowfullscreen></iframe></div>
+                  <div><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0-D1pijdNqI" frameborder="0" allowfullscreen></iframe></div>
+
                 <h2>Hear more</h2>
-                <div><iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77962505&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                  <div><iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77968599&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                    <div><iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77967798&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                <div><iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77962505&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
+                  <div><iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77968599&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
+                    <div><iframe class="embed-responsive-item" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/77967798&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div>
             </div>
-
-
         </div>
     </section>
 
@@ -301,7 +326,7 @@
 
                   <!-- Text input-->
                   <div class="form-group">
-                    <label class="col-md-4 control-label" for="name">Name <br>(required)</label>
+                    <label class="col-md-4 control-label" for="name">Full name <br>(required)</label>
                     <div class="col-md-4">
                     <input id="name" name="name" placeholder="" class="form-control input-md" type="text">
                     </div>
@@ -371,7 +396,7 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" Style="margin-top: -7px" for="event">Choose your music</label>
                     <div class="col-md-4 text-left">
-                      <input id="own4" name="own4" value="Ceilidh" type="checkbox">
+                      <input id="own1" name="own1" value="Ceilidh" type="checkbox">
                       <label class="form-check-label" for="event">Ceilidh</label>
                     </div>
                   </div>
@@ -379,7 +404,7 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="event"></label>
                     <div class="col-md-4 text-left">
-                      <input id="own5" name="own5" value="Disco" type="checkbox">
+                      <input id="own2" name="own2" value="Disco" type="checkbox">
                       <label class="form-check-label" for="event">Disco</label>
                     </div>
                   </div>
@@ -387,7 +412,7 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="event"></label>
                     <div class="col-md-4 text-left">
-                      <input id="own2" name="own2" value="Ceremony background" type="checkbox">
+                      <input id="own3" name="own3" value="Ceremony background" type="checkbox">
                       <label class="form-check-label" for="event">Background music</label>
                     </div>
                   </div>
@@ -395,7 +420,7 @@
                   <div class="form-group">
                     <label class="col-md-4 control-label" for="event"></label>
                     <div class="col-md-4 text-left">
-                      <input id="own1" name="own1" value="Ceremony bagpipes" type="checkbox">
+                      <input id="own4" name="own4" value="Ceremony bagpipes" type="checkbox">
                       <label class="form-check-label" for="event">Highland bagpipes</label>
                     </div>
                   </div>
@@ -403,7 +428,7 @@
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="event">Other details</label>
                       <div class="col-md-4">
-                        <textarea class="form-control-skyrie" id="vaddress" name="vaddress"></textarea>
+                        <textarea class="form-control-skyrie" id="additionalInfo" name="additionalInfo"></textarea>
                       </div>
                     </div>
 
